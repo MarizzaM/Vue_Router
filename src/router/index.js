@@ -3,6 +3,8 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Jobs from '../views/jobs/Jobs.vue'
 
+import JobDetails from '../views//jobs/JobDetails.vue'
+
 const routes = [
   {
     path: '/',
@@ -18,7 +20,14 @@ const routes = [
     path: '/jobs',
     name: 'Jobs',
     component: Jobs
-  }
+  },
+
+  {
+    path: '/jobs/:id',
+    name: 'JobDetails',
+    component: JobDetails
+  },
+
 ]
 
 const router = createRouter({
